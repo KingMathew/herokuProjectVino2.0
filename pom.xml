@@ -51,7 +51,7 @@
                     <assembleDirectory>target</assembleDirectory>
                     <programs>
                         <program>
-                            <mainClass>MainGlassfish</mainClass>
+                            <mainClass>Main.MainGlassfish</mainClass>
                             <name>webapp</name>
                         </program>
                     </programs>

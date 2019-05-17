@@ -1,4 +1,4 @@
-package com.mkyong.rest;
+package Services;
 
 import java.util.List;
 import javax.ws.rs.DELETE;
@@ -9,8 +9,8 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
-import org.o7planning.restfulcrud.dao.TeamDao;
-import org.o7planning.restfulcrud.model.Team;
+import DAO.TeamDao;
+import Model.Team;
 
 /**
  *

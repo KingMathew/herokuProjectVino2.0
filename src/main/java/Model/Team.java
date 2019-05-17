@@ -1,5 +1,5 @@
 
-package org.o7planning.restfulcrud.model;
+package Model;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;

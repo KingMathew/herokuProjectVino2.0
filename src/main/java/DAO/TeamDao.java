@@ -1,12 +1,11 @@
-package org.o7planning.restfulcrud.dao;
+package DAO;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import org.o7planning.restfulcrud.model.Employee;
-import org.o7planning.restfulcrud.model.Team;
+import Model.Team;
 
 /**
  *

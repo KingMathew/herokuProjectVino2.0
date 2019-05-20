@@ -1,5 +1,6 @@
 package Responses;
 
+import com.google.gson.JsonObject;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
@@ -10,13 +11,15 @@ public class BaseResponse {
 
     private String message;
     private int status;
-
-    public BaseResponse(String message, int status) {
-        this.message = message;
-        this.status = status;
-    }
+    private JsonObject data;
 
     public BaseResponse() {
+    }
+
+    public BaseResponse(String message, int status, JsonObject data) {
+        this.message = message;
+        this.status = status;
+        this.data = data;
     }
 
     public String getMessage() {
@@ -35,11 +38,12 @@ public class BaseResponse {
         this.status = status;
     }
 
-    @Override
-    public String toString() {
-        return "BaseResponse{"
-                + "message='" + message + '\''
-                + ", status=" + status
-                + '}';
+    public JsonObject getData() {
+        return data;
     }
+
+    public void setData(JsonObject data) {
+        this.data = data;
+    }
+
 }

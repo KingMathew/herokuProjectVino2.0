@@ -85,7 +85,7 @@ public class CORSFilter implements Filter {
     }
 
     private void sendUnAuthorizeResponse(HttpServletResponse response, String message) throws IOException {
-        BaseResponse myResponse = new BaseResponse(message, 0);
+        BaseResponse myResponse = new BaseResponse(message, 0, null);
         String json = new Gson().toJson(myResponse);
         response.setContentType("application/json");
         response.setCharacterEncoding("UTF-8");

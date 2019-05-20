@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Services;
 
 import Model.UserAuth;
@@ -53,7 +49,7 @@ public class Auth {
             System.err.println(e.getClass().getName() + ": " + e.getMessage());
         }
         response.put("success", false);
-        response.put("message", "Usuario y/o contraseña incorrectos.");
+        response.put("message", "Credenciales incorrectas.");
         return response.toString();
 
     }
